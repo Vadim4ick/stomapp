@@ -1,0 +1,186 @@
+//==================================================================================
+.header {
+  &__container {
+  }
+
+  &__body {
+    min-height: rem(118);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: $tablet) {
+      min-height: rem(84);
+    }
+
+    a {
+      z-index: 5;
+    }
+  }
+
+  &__menu {
+  }
+}
+
+.menu {
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+
+    @media (min-width: $tablet) {
+      align-items: center;
+      @include adaptiveValue("gap", 30, 20, 1920, 992);
+    }
+
+    @media (max-width: $tablet) {
+      position: fixed;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      overflow: auto;
+      background-color: #fff;
+      padding: rem(130) rem(25) 0 rem(25);
+      transition: left 0.3s ease 0s;
+      z-index: 4;
+
+      .menu-open & {
+        left: 0;
+      }
+    }
+  }
+
+  &__item {
+    @media (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: rem(35);
+      }
+
+      &.support {
+        margin-top: rem(45);
+        margin-bottom: rem(45);
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: math.div(21, 16);
+    cursor: pointer;
+
+    &.support {
+      min-width: rem(184);
+      min-height: rem(41);
+    }
+
+    &.phone span {
+      display: none;
+    }
+
+    @media (max-width: $tablet) {
+      font-weight: 300;
+      font-size: rem(18);
+      line-height: math.div(23, 18);
+
+      &.phone {
+        display: flex;
+        align-items: center;
+        gap: rem(15);
+      }
+
+      &.phone span {
+        display: block;
+      }
+    }
+  }
+
+  &__icon {
+  }
+}
+
+.icon-menu {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+    cursor: pointer;
+    z-index: 5;
+
+    &::after {
+      content: "";
+      background-image: url("../img/burger.svg");
+      top: 50%;
+      transform: translateY(-55%);
+      right: 0;
+      width: 36px;
+      height: 36px;
+      z-index: 5;
+      position: absolute;
+    }
+
+    .menu-open & {
+      &::after {
+        background-image: url("../img/close.svg");
+        width: 27px;
+        z-index: 5;
+        top: 50%;
+        transform: translateY(-55%);
+        right: 0;
+        height: 27px;
+      }
+    }
+  }
+}
+
+//==================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+		}
+		&::before {
+			top: 0px;
+		}
+		&::after {
+			bottom: 0px;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}
+*/

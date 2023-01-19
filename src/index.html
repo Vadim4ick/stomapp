@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="main__section section-main">
+          <div class="section-main__container">
+            <div class="section-main__body">
+              <div class="section-main__info">
+                <div class="section-main__title">
+                  <h1>Заказ — наряды нового поколения</h1>
+                </div>
+                <div class="section-main__subtitle">
+                  <h3>
+                    Мы создали приложение, которое позволит структурировать
+                    данные в заказ-наряде и сделать процесс передачи
+                    зуботехнических работ быстрым и простым
+                  </h3>
+                </div>
+
+                <div
+                  data-da=".btns__link_mobile,992,2"
+                  class="section-main__links"
+                >
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="img/main-section/googleMobile.svg"
+                        media="(max-width: 992px)"
+                      />
+                      <source srcset="img/main-section/google.svg" alt="" />
+
+                      <img src="img/main-section/google.svg" alt="" />
+                    </picture>
+                  </a>
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="img/main-section/AppStoreMobile.svg"
+                        media="(max-width: 992px)"
+                      />
+                      <source srcset="img/main-section/AppStore.svg" alt="" />
+
+                      <img src="img/main-section/AppStore.svg" alt="" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="section-main__images">
+                <picture>
+                  <source
+                    src="img/main-section/phoneMobile.png"
+                    srcset="img/main-section/phoneMobile-2x.png 2x"
+                    media="(max-width: 992px)"
+                  />
+                  <source
+                    src="img/main-section/phones.png"
+                    srcset="img/main-section/phones-2x.png 2x"
+                  />
+                  <img
+                    src="img/main-section/phones.png"
+                    srcset="img/main-section/phones-2x.png 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="btns__link_mobile"></div>
+            </div>
+          </div>
+        </section>
+        <section class="banner__slider slider-banner">
+          <div class="slider-banner__container">
+            <div class="slider-banner__slider">
+              <div class="slider-banner__swiper">
+                <div class="slider-banner__slide slide1">
+                  <div class="slider-banner__height">
+                    <div class="slider-banner__body body-banner">
+                      <div class="body-banner__image">
+                        <picture>
+                          <source
+                            src="img/slider-banner/phone1-mobile.png"
+                            srcset="img/slider-banner/phone1-mobile-2x.png 2x"
+                            media="(max-width: 992px)"
+                          />
+                          <source
+                            src="img/slider-banner/phone1.png"
+                            srcset="img/slider-banner/phone1-2x.png 2x"
+                          />
+                          <img
+                            src="img/slider-banner/phone1.png"
+                            srcset="img/slider-banner/phone1-2x.png 2x"
+                          />
+                        </picture>
+                      </div>
+                      <div class="body-banner__content">
+                        <span>Начните прямо сейчас</span>
+                        <p>Бесплатно</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-banner__slide slide2">
+                  <div class="slider-banner__height">
+                    <div class="slider-banner__body body-banner">
+                      <div class="body-banner__image">
+                        <picture>
+                          <source
+                            src="img/slider-banner/phones-mobile.png"
+                            srcset="img/slider-banner/phones-mobile-2x.png 2x"
+                            media="(max-width: 992px)"
+                          />
+                          <source
+                            src="img/slider-banner/phones2.png"
+                            srcset="img/slider-banner/phones2-2x.png 2x"
+                          />
+                          <img
+                            src="img/slider-banner/phones2.png"
+                            srcset="img/slider-banner/phones2-2x.png 2x"
+                          />
+                        </picture>
+                      </div>
+                      <div class="body-banner__content">
+                        <span>Все возможности данного сервиса всего за</span>
+                        <p>790 руб./мес*</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-banner__fraction fraction-controll">
+                <span class="fraction-controll__current">1</span>/<span
+                  class="fraction-controll__all"
+                  >0</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="orders">
+          <div class="orders__container">
+            <div class="orders__slider">
+              <div class="orders__swiper">
+                <div class="orders__slide orders-closest">
+                  <div class="orders__title">
+                    <h2>Обычный заказ-наряд</h2>
+                  </div>
+                  <ul class="orders__list">
+                    <li>Куча бумажной волокиты</li>
+                    <li>Размытые сроки изготовления</li>
+                    <li>
+                      Невозможность контролировать все этапы работ – вы
+                      получаете уже готовый заказ
+                    </li>
+                    <li>Можно добавлять только текстовое описание заказа</li>
+                    <li>
+                      Высокая вероятность некачественного исполнения заказа
+                      из-за человеческого фактора
+                    </li>
+                  </ul>
+                </div>
+                <div class="orders__slide orders-success">
+                  <div class="orders__title">
+                    <h2>
+                      Заказ-наряд <br />
+                      в сервисе Stomapp
+                    </h2>
+                  </div>
+                  <ul class="orders__list">
+                    <li>Структурированность большого объема данных</li>
+                    <li>Уведомления о статусе работы и сдаче заказа</li>
+                    <li>
+                      Синхронизация данных, <br />
+                      техника и врача
+                    </li>
+                    <li>
+                      Автоматический контроль отправки ложек, аналогов и
+                      трансферов
+                    </li>
+                    <li>Фото, аудио и тестовые комментарии в заказе</li>
+                    <li>
+                      Вероятность ошибки практически равна нулю из-за снижения
+                      человеческого фактора
+                    </li>
+                    <li>
+                      Возможность создавать краткий отчет через систему фильтров
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="service" class="service__allows allows-service">
+          <div class="allows-service__container">
+            <div class="allows-service__title">
+              <h2>Сервис позволяет:</h2>
+            </div>
+
+            <div class="allows-service__body">
+              <div class="allows-service__cart">
+                <div class="allows-service__image">
+                  <picture>
+                    <source
+                      srcset="img/allows-service/mobile/1.svg"
+                      media="(max-width: 767.98px)"
+                    />
+                    <source srcset="img/allows-service/1.svg" />
+                    <img src="img/allows-service/1.svg" alt="" />
+                  </picture>
+                </div>
+
+                <div class="allows-service__text">
+                  <p>
+                    Заполнять заказ-наряд быстро, используя мобильное приложение
+                  </p>
+                </div>
+              </div>
+              <div class="allows-service__cart">
+                <div class="allows-service__image">
+                  <picture>
+                    <source
+                      srcset="img/allows-service/mobile/2.svg"
+                      media="(max-width: 767.98px)"
+                    />
+                    <source srcset="img/allows-service/2.svg" />
+                    <img src="img/allows-service/2.svg" alt="" />
+                  </picture>
+                </div>
+
+                <div class="allows-service__text">
+                  <p>Оставлять аудио и фото комментарии в каждом наряде</p>
+                </div>
+              </div>
+              <div class="allows-service__cart">
+                <div class="allows-service__image">
+                  <picture>
+                    <source
+                      srcset="img/allows-service/mobile/3.svg"
+                      media="(max-width: 767.98px)"
+                    />
+                    <source srcset="img/allows-service/3.svg" />
+                    <img src="img/allows-service/3.svg" alt="" />
+                  </picture>
+                </div>
+
+                <div class="allows-service__text">
+                  <p>
+                    Указывать в наряде <br />
+                    более 100 параметров
+                  </p>
+                </div>
+              </div>
+              <div class="allows-service__cart">
+                <div class="allows-service__image">
+                  <picture>
+                    <source
+                      srcset="img/allows-service/mobile/4.svg"
+                      media="(max-width: 767.98px)"
+                    />
+                    <source srcset="img/allows-service/4.svg" />
+                    <img src="img/allows-service/4.svg" alt="" />
+                  </picture>
+                </div>
+
+                <div class="allows-service__text">
+                  <p>
+                    Контролировать отправленные работы (слепки, трансферы,
+                    аналоги)
+                  </p>
+                </div>
+              </div>
+              <div class="allows-service__cart">
+                <div class="allows-service__image">
+                  <picture>
+                    <source
+                      srcset="img/allows-service/mobile/5.svg"
+                      media="(max-width: 767.98px)"
+                    />
+                    <source srcset="img/allows-service/5.svg" />
+                    <img src="img/allows-service/5.svg" alt="" />
+                  </picture>
+                </div>
+
+                <div class="allows-service__text">
+                  <p>Контролировать выполнение заказа на каждом этапе</p>
+                </div>
+              </div>
+              <div class="allows-service__cart">
+                <div class="allows-service__image">
+                  <picture>
+                    <source
+                      srcset="img/allows-service/mobile/6.svg"
+                      media="(max-width: 767.98px)"
+                    />
+                    <source srcset="img/allows-service/6.svg" />
+                    <img src="img/allows-service/6.svg" alt="" />
+                  </picture>
+                </div>
+
+                <div class="allows-service__text">
+                  <p>
+                    Индивидуально настраивать приложение по вашим пожеланиям
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="howWork" class="how__work work-how">
+          <div class="work-how__container">
+            <div class="work-how__title-main">
+              <h2>Как это работает?</h2>
+            </div>
+
+            <div class="work-how__slider">
+              <div class="work-how__steps step-work">
+                <div class="step-work__item">Шаг <span>1</span></div>
+                <div class="step-work__item">Шаг <span>2</span></div>
+                <div class="step-work__item">Шаг <span>3</span></div>
+                <div class="step-work__item">Шаг <span>4</span></div>
+                <div class="step-work__item">Шаг <span>5</span></div>
+                <div class="step-work__item">Шаг <span>6</span></div>
+                <div class="step-work__item">Шаг <span>7</span></div>
+                <div class="step-work__item">Шаг <span>8</span></div>
+              </div>
+              <div class="work-how__steps_mobile">Шаг <span> 1</span></div>
+              <div class="swiper-scrollbar"></div>
+              <div class="work-how__swiper">
+                <div class="work-how__slide">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/1.png"
+                        srcset="img/work-how/1-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>
+                            Регистрация <br />
+                            в личном кабинете
+                          </h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            Указывайте тот номер, которым пользуетесь и к
+                            которому имеете доступ. Когда придет код по СМС,
+                            введите его для подтверждения номера.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- <div class="work-how__btn">
+                        <button class="btn">Далее</button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="work-how__slide">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/2.png"
+                        srcset="img/work-how/2-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>Настройте фунционал заказ-наряда</h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            Перейдите в настройки, чтобы активировать или
+                            деактивировать под себя нужные вам виды работ или
+                            данные для заполнения заказ-наряда по каждому виду
+                            работ. Также создавайте системы имплантов и зубные
+                            гарнитуры, которые вы используете в работе и они
+                            отобразятся во время заполнения наряда.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- <div class="work-how__btn">
+                        <button class="btn">Далее</button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="work-how__slide">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/3.png"
+                        srcset="img/work-how/3-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>Создание заказ-наряда</h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            Настройте заказ наряд под себя, выберите нужные виды
+                            работ, настройте актуальные функции.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- <div class="work-how__btn">
+                        <button class="btn">Далее</button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="work-how__slide">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/4.png"
+                        srcset="img/work-how/4-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>Чат</h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            В каждом заказ-наряде формируется свой чат.
+                            Обмениайтесь текстовыми сообщениями или отправляйте
+                            аудиозапись, прикрепляйте фотопротокол или видео.
+                            Всё привычным вам способом.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- <div class="work-how__btn">
+                        <button class="btn">Далее</button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="work-how__slide slide5">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/5.png"
+                        srcset="img/work-how/5-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>Отправка заказа</h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            Сформированный заказ-наряд сохраните в ПДФ и
+                            отправьте в мессенджерах, по почте или любым другим
+                            удобным вам способом.
+                          </p>
+                          <p>
+                            У вас есть возможность использовать базу врачей,
+                            клиник, лабораторий и техников в приложении, и
+                            полностью наладить онлайн коммуникацию. Свяжитесь со
+                            службой поддержки Stomapp для подключения базы
+                            контактов.
+                          </p>
+                        </div>
+
+                        <!-- <div class="work-how__btn">
+                          <button class="btn">Далее</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-how__slide slide6">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/6.png"
+                        srcset="img/work-how/6-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>Уведомления</h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            Получайте уведомления о запросах в контактах,
+                            появлении новых работ, их принятии или отмене,
+                            изменениях статусов работ, появлении новых
+                            комментариев в чате и многом другом.
+                          </p>
+                        </div>
+
+                        <!-- <div class="work-how__btn">
+                          <button class="btn">Далее</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-how__slide">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/6.png"
+                        srcset="img/work-how/6-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>Наряды</h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            Отслеживайте статус заказ-нарядов и контролируйте
+                            онлайн этапы выполнения.
+                          </p>
+                        </div>
+
+                        <!-- <div class="work-how__btn">
+                          <button class="btn">Далее</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-how__slide">
+                  <div class="work-how__body">
+                    <div class="work-how__image">
+                      <img
+                        src="img/work-how/6.png"
+                        srcset="img/work-how/6-2x.png 2x"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="work-how__info">
+                      <div class="work-how__content">
+                        <div class="work-how__title">
+                          <h3>Отчеты</h3>
+                        </div>
+
+                        <div class="work-how__text">
+                          <p>
+                            Создавайте удобные вам отчеты о проделанной работе,
+                            настраивая их с помощью фильтров.
+                          </p>
+
+                          <p>
+                            Также вы можете создать отчёт о переданных или
+                            принятых вами аналогах, трансферах, ложках и других
+                            деталях, сопровождающих работу.
+                          </p>
+                        </div>
+
+                        <div class="work-how__btns">
+                          <button class="btn">Далее</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-how__btn">
+                <button class="btn">Далее</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="dowland" class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__content">
+              <div class="contacts__body">
+                <div class="contacts__links links-contacts">
+                  <div class="links-contacts__title">
+                    <h2>
+                      Скачайте приложение и пользуйтесь абсолютно бесплатно
+                    </h2>
+                  </div>
+                  <div class="links-contacts__links">
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="img/main-section/googleMobile.svg"
+                          media="(max-width: 992px)"
+                        />
+                        <source srcset="img/main-section/google.svg" alt="" />
+
+                        <img src="img/main-section/google.svg" alt="" />
+                      </picture>
+                    </a>
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="img/main-section/AppStoreMobile.svg"
+                          media="(max-width: 992px)"
+                        />
+                        <source srcset="img/main-section/AppStore.svg" alt="" />
+
+                        <img src="img/main-section/AppStore.svg" alt="" />
+                      </picture>
+                    </a>
+                  </div>
+                </div>
+                <div class="contacts-image_mobile"></div>
+                <div id="contacts" class="contacts__contact contacts-contact">
+                  <div class="contacts-contact__title">
+                    <h2>Контакты</h2>
+                  </div>
+                  <div class="contacts-contact__content">
+                    <!-- <span class="nav">
+                      <img src="img/contacts/nav.svg" alt="" />
+                      г. Анапа, ул. Шевченко, <br />
+                      288А корп. 2 пом. 2</span
+                    > -->
+                    <a class="phone" href="tel:89184120012">
+                      <img src="img/contacts/phone.svg" alt="" />
+                      8 (918) 412-00-12</a
+                    >
+                    <a class="mail" href="mailto:stomapp@mail.ru"
+                      ><img src="img/contacts/mail.svg" alt="" />
+                      stomapp@mail.ru</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                data-da=".contacts-image_mobile,992,2"
+                class="contacts__image"
+              >
+                <picture>
+                  <source
+                    src="img/contacts/phonesMobile.png"
+                    srcset="img/contacts/phonesMobile-2x.png 2x"
+                    media="(max-width: 992px)"
+                  />
+                  <source
+                    src="img/contacts/phones.png"
+                    srcset="img/contacts/phones-2x.png 2x"
+                    alt=""
+                  />
+
+                  <img
+                    src="img/contacts/phones.png"
+                    srcset="img/contacts/phones-2x.png 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

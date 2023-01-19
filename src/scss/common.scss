@@ -1,0 +1,254 @@
+// Заголовки, общие БЄМ блоки и проче...
+h1 {
+  font-weight: 700;
+  @include adaptiveValue("font-size", 56, 32);
+  line-height: math.div(60, 56);
+}
+
+h3 {
+  font-weight: 400;
+  @include adaptiveValue("font-size", 24, 18);
+  line-height: math.div(31, 24);
+}
+
+h2 {
+  font-weight: 700;
+  @include adaptiveValue("font-size", 36, 20);
+  line-height: math.div(46, 36);
+}
+
+.slider-banner__slide.slide1 .slider-banner__body {
+  grid-template-columns: rem(426) 1fr;
+}
+
+.slider-banner__slide.slide1 .body-banner__image {
+  top: -40px;
+  left: 30px;
+}
+
+.slider-banner__slide.slide1 .body-banner__content {
+  span {
+    font-size: 48px;
+    line-height: 62px;
+
+    @media (max-width: $tablet) {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+
+  p {
+    font-size: 77px;
+    line-height: 98px;
+
+    @media (max-width: $tablet) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
+}
+
+.slider-banner__slide.slide2 .slider-banner__body {
+  grid-template-columns: rem(588) 1fr;
+
+  @media (max-width: em(1100)) {
+    grid-template-columns: rem(500) 1fr;
+  }
+}
+
+.slider-banner__slide.slide2 .body-banner__image {
+  bottom: 0;
+  left: rem(70);
+
+  @media (max-width: em(1100)) {
+    left: rem(30);
+  }
+}
+.slider-banner__slide.slide2 .body-banner__content {
+  gap: rem(25);
+
+  @media (max-width: $tablet) {
+    gap: rem(3);
+    padding: rem(46) rem(20) rem(0) rem(20);
+
+    span {
+      text-align: center;
+    }
+
+    margin-bottom: rem(40);
+  }
+}
+
+.slider-banner__slider .swiper {
+  overflow: inherit;
+}
+
+.orders__slide.orders-closest .orders__title {
+  margin-bottom: rem(76);
+  white-space: nowrap;
+
+  @media (max-width: $tablet) {
+    margin-bottom: rem(55);
+  }
+}
+
+.orders__slide.orders-success .orders__title {
+  margin-bottom: rem(33);
+
+  @media (max-width: $tablet) {
+    margin-bottom: rem(30);
+  }
+}
+
+.orders__slide.orders-closest .orders__list li {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../img/order-closest.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: -41px;
+  }
+
+  @media (max-width: $tablet) {
+    &::after {
+      background-image: url("../img/closestMobile.svg");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      left: -27px;
+    }
+  }
+}
+
+.orders__slide.orders-success .orders__list li {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../img/order-sucsses.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: -41px;
+  }
+
+  @media (max-width: $tablet) {
+    &::after {
+      background-image: url("../img/sucsessMobile.svg");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      left: -27px;
+    }
+  }
+}
+
+.orders__swiper .swiper-slide {
+  @media (min-width: $tablet) {
+    flex-shrink: 1;
+    width: auto;
+  }
+  height: auto;
+}
+
+.orders__swiper.swiper-wrapper {
+  @media (min-width: $tablet) {
+    @include adaptiveValue("gap", 79, 50, 1920, 992);
+  }
+}
+
+.orders__slide.orders-success {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    &::after {
+      content: "";
+      background-image: url("../img/square.svg");
+      position: absolute;
+      width: 369px;
+      height: 354px;
+      top: -21%;
+      right: -40%;
+      z-index: -1;
+    }
+  }
+}
+
+.slider-banner__slider.swiper {
+  overflow: hidden;
+}
+
+.slider-banner__height {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+}
+
+.work-how__slider.swiper {
+  overflow: hidden;
+}
+
+.work-how__slide.slide5 .work-how__text,
+.work-how__slide.slide6 .work-how__text {
+  max-width: rem(485);
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
+}
+
+.swiper-horizontal > .swiper-scrollbar {
+  @include adaptiveValue("margin-bottom", 50, 25);
+}
+
+.step-work {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-items: center;
+
+  @include adaptiveValue("margin-bottom", 20, 15);
+}
+
+.step-work__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #afafaf;
+}
+
+.step-work__item.active {
+  color: #000;
+}
+
+.work-how__steps {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.work-how__steps_mobile {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  text-align: center;
+  margin-bottom: rem(15);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}

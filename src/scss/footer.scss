@@ -1,0 +1,82 @@
+//===================================================================================
+.footer {
+  background: #efefef;
+  min-height: rem(135);
+
+  &__container {
+  }
+
+  &__body {
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: rem(52);
+    }
+    padding-top: rem(30);
+  }
+
+  &__col {
+    span {
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: rem(12);
+      line-height: math.div(15, 12);
+      color: #818181;
+
+      @media (max-width: $mobile) {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__col {
+    &_links {
+      display: flex;
+      gap: rem(30);
+      cursor: pointer;
+
+      @media (max-width: $tablet) {
+        padding-top: rem(10);
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: rem(30);
+    font-family: "Inter";
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: rem(10);
+      align-items: flex-start;
+    }
+
+    a {
+      font-weight: 300;
+      font-size: rem(14);
+      line-height: math.div(17, 14);
+      color: #818181;
+    }
+  }
+
+  &__support {
+    &_link {
+      min-width: rem(185);
+      height: rem(40);
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: math.div(21, 16);
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+  }
+}
+
+//===================================================================================
